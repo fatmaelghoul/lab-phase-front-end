@@ -1,0 +1,88 @@
+.landing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.landing-background {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle at center, #ffc10720, transparent 70%);
+  animation: pulse 8s infinite alternate;
+  z-index: 0;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.2; }
+  100% { transform: scale(1.2); opacity: 0.4; }
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 6px solid #fff;
+  border-top: 6px solid #ffc107;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  z-index: 1;
+}
+
+.landing-content {
+  z-index: 2;
+}
+
+.landing-title {
+  font-size: 3rem;
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+
+.landing-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+.landing-description {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.landing-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  color: #0d0d0d;
+  background-color: #ffc107;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.landing-button.secondary {
+  background-color: transparent;
+  border: 2px solid #ffc107;
+  color: #ffc107;
+}
+
+.landing-button:hover {
+  background-color: #ffda44;
+  color: #000;
+}

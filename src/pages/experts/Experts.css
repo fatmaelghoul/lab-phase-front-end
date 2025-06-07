@@ -1,0 +1,113 @@
+/* Experts.css */
+
+.experts-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+
+.experts-section h1 {
+  text-align: center;
+  color: #facc15;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.search-input {
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+  transition: border 0.3s;
+}
+
+.search-input:focus {
+  border: 1.5px solid #facc15;
+  outline: none;
+}
+
+.experts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 700px) {
+  .experts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .experts-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.expert-card {
+  background: #f9f9f9;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(250,204,21,0.08);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition: transform 0.25s, box-shadow 0.25s;
+  border: 1.5px solid #facc15;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expert-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(250,204,21,0.15);
+}
+
+.expert-photo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  border: 3px solid #facc15;
+  background: #f3f3f3;
+  display: block;
+}
+
+.expert-card h2 {
+  color: #222;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.expert-card p {
+  color: #555;
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: #facc15;
+  color: #222;
+  font-weight: 700;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(250,204,21,0.08);
+}
+.contact-btn:hover {
+  background: #222;
+  color: #facc15;
+}
