@@ -1,0 +1,36 @@
+.about-section {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.about-text.secondary {
+  color: #aaa;
+}
+
+.about-text:hover {
+  color: #fff;
+}
