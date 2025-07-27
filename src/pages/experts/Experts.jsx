@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Experts.css";
+const base = import.meta.env.VITE_API_URL;
 
 function HandyManList() {
   const [handyMen, setHandyMen] = useState([]);
@@ -10,7 +11,7 @@ function HandyManList() {
   useEffect(() => {
     const fetchHandyMen = async () => {
       try {
-        const response = await axios.get("http://localhost:5173/api/experts");
+        const response = await axios.get(`${base}/api/experts`);
         console.log("API Response:", response.data);
         setHandyMen(response.data.handyMan); // ← utilise la bonne clé ici
       } catch (error) {
