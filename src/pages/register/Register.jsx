@@ -5,7 +5,7 @@ import { FaEyeSlash } from "react-icons/fa";
 import "./style.css";
 import axios from "axios";
 
-const baseUrl = "http://localhost:5000";
+const baseUrl =  import.meta.env.VITE_API_URL;
 
 function Register() {
   const navigate = useNavigate();

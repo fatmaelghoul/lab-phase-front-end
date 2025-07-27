@@ -11,7 +11,9 @@ const VerifyEmail = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-  const baseUserUrl = "http://localhost:5000/api/userControllers";
+  const base = import.meta.env.VITE_API_URL;
+
+  const baseUserUrl = `${base}/api/userControllers`;
 
   useEffect(() => {
     if (token) {
