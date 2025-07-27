@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
 import { useCustomerAuth } from "../../context/AuthCustomerContext";
-
+const base = import.meta.env.VITE_API_URL;
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -29,7 +29,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/userControllers/login`,
+         `${base}/api/userControllers/login`,
         {
           email,
           password,
